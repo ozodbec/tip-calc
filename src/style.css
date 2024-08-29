@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 32px;
+  border-radius: 20px;
+  gap: 50px;
+}
+.main__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d6666;
+  margin-bottom: 60px;
+  letter-spacing: 10px;
+}
+.main__form h5 {
+  color: #5e7a7d;
+  margin-bottom: 10px;
+}
+input {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+}
+.main__label {
+  display: flex;
+  align-items: center;
+  background-color: #f2f9fa;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.main__label span {
+  color: #9ebbbd;
+  font-size: x-large;
+  padding: 10px;
+  width: 100%;
+}
+
+.main__label input {
+  border: none;
+  text-align: right;
+  outline: none;
+  width: 100%;
+
+  background-color: inherit;
+}
+/* radio box */
+.tip-container {
+  margin: 20px 0 10px;
+}
+.tip-container p {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+.tip-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.tip-options input[type="radio"] {
+  display: none;
+}
+
+.tip-options label,
+.custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #064e46;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%; /* Yangi */
+  box-sizing: border-box; /* Yangi */
+}
+
+.tip-options input[type="radio"]:checked + label {
+  background-color: #2fd7c4;
+  color: #064e46;
+}
+
+.tip-options input[type="radio"]:checked + label:hover {
+  background-color: #27b9ad;
+}
+
+.tip-options label:hover {
+  background-color: #00474b;
+}
+
+.custom {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 20px;
+  background-color: #f2f9fa;
+  color: #064e46;
+}
+
+.custom::placeholder {
+  font-size: 22px;
+}
+
+/* result box */
+.result {
+  position: relative;
+  background-color: #00474b;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.result__amount {
+  font-family: monospace;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+}
+.result__amount p {
+  color: white;
+}
+.result__amount span {
+  color: #7f9d9f;
+}
+.result__amount h1 {
+  color: #26c2ae;
+}
+
+.btn {
+  font-family: monospace;
+  position: absolute;
+  width: 85%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  bottom: 40px;
+  border: none;
+  background-color: #26c2ae;
+  padding: 13px 0;
+  color: #00474b;
+  font-weight: 700;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #82f5e7;
+}

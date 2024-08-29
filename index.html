@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>tip-calc</title>
+  </head>
+  <body>
+
+    <!-- HERO -->
+     
+    <div class="main">
+      <h1 class="main__title">
+        SPLI <br />
+        TTER
+      </h1>
+      <div class="content">
+        <form class="main__form">
+          <h5>Bill</h5>
+          <label class="main__label">
+            <span>$</span>
+            <input  id="bill" type="text" placeholder=" 0.00" />
+          </label>
+          <div class="tip-container">
+            <p>Select Tip %</p>
+            <div class="tip-options">
+              <input type="radio" id="tip-5" name="tip" value="5%" />
+              <label for="tip-5">5%</label>
+
+              <input type="radio" id="tip-10" name="tip" value="10%" />
+              <label for="tip-10">10%</label>
+
+              <input type="radio" id="tip-15" name="tip" value="15%" checked />
+              <label for="tip-15">15%</label>
+
+              <input type="radio" id="tip-25" name="tip" value="25%" />
+              <label for="tip-25">25%</label>
+
+              <input type="radio" id="tip-50" name="tip" value="50%" />
+              <label for="tip-50">50%</label>
+
+              <input
+                class="custom"
+                type="text"
+                id="tip-custom"
+                name="tip"
+                placeholder="custom"
+              />
+            </div>
+          </div>
+          <div>
+            <h5>Number of People</h5>
+            <label class="main__label">
+              <img src="image/people.svg" alt="" />
+              <input type="text" placeholder="0" />
+            </label>
+          </div>
+        </form>
+
+        <!-- TOTAL RESULT  -->
+
+        <div class="result">
+          <div class="result__amount">
+            <p>
+              Tip Amount <br />
+              <span>/ person</span>
+            </p>
+            <h1 id="amount">$ 0.00</h1>
+          </div>
+          <div class="result__amount">
+            <p>
+              Total<br />
+              <span>/ person</span>
+            </p>
+            <h1 class="total">$ 0.00</h1>
+          </div>
+          <button class="btn">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
